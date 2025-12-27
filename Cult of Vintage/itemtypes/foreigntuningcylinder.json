@@ -1,0 +1,66 @@
+{
+	code: "foreigntuningcylinder",
+	behaviors: [
+		{ name: "GroundStorable", properties: { layout: 'Quadrants', collisionBox: { x1: 0, y1: 0, z1: 0, x2: 1, y2: 0.125, z2: 1 } } }
+	],
+	attributes: {
+		scrollrackable: true,
+		onscrollrackTransform: {
+			translation: { x: -0.52, y: -0.28, z: 0.5 },
+			rotation: { x: -47, y: 5, z: -95 },
+			origin: { x: 0.5, y: 0.2, z: 0.5 }
+		},
+		isPlayableDisc: true,
+		musicTrackByType: {
+			"*-1": "slsp:music/foreigntuningcylinder/feel_liesofp.ogg",
+			"*-2": "slsp:music/foreigntuningcylinder/proposal_flower,_wolf part 1.ogg",
+			"*-3": "slsp:music/foreigntuningcylinder/quixotic.ogg",
+			"*-4": "slsp:music/foreigntuningcylinder/shadow_flower.ogg",
+			"*-5": "slsp:music/foreigntuningcylinder/someday.ogg",
+			"*-6": "slsp:music/foreigntuningcylinder/why.ogg",
+			"*-7": "slsp:music/foreigntuningcylinder/memory_of_beach.ogg",
+			"*-8": "slsp:music/foreigntuningcylinder/misty_er'a.ogg",
+		}
+	},
+	creativeinventory: { "general": ["*"], "items": ["*"] },
+	variantgroups: [
+		{ code: "type", states: ["1","2","3","4","5","6","7","8"] }
+	],
+	shape: { base: "game:block/machine/resonator-cylinder" },
+	textures: {
+		colorByType: {
+			"*-1": { base: "game:block/leather/black" },
+			"*-2": { base: "game:block/leather/blue" },
+			"*-3": { base: "game:block/leather/gray" },
+			"*-4": { base: "game:block/leather/green" },
+			"*-5": { base: "game:block/leather/orange" },
+			"*-6": { base: "game:block/leather/pink" },
+			"*-7": { base: "game:block/leather/plain" },
+			"*-8": { base: "game:block/leather/poor" },
+		}
+	},
+	maxstacksize: 1,
+	guiTransform: {
+		translation: { x: 2, y: 0, z: 0 },
+		rotation: { x: 147, y: -14, z: -31 },
+		origin: { x: 0.5, y: 0.3, z: 0.5 },
+		scale: 2.39
+	},
+	fpHandTransform: {
+		translation: { x: -0.05, y: 0, z: 0 },
+		rotation: { x: 15, y: 99, z: -30 },
+		origin: { x: 0.5, y: 0.1, z: 0.5 },
+		scale: 1.75
+	},
+	tpHandTransform: {
+		translation: { x: -1.1, y: -0.7, z: -0.7 },
+		rotation: { x: 95, y: -1, z: -76 },
+		scale: 0.65
+	},
+	groundTransform: {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: 90, y: 0, z: 0 },
+		origin: { x: 0.5, y: 0.5, z: 0.58 },
+		scale: 4.1
+	}
+}
